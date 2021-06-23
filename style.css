@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif,verdana, arial;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 1rem;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+    min-height: 15rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+    padding-right: 50px;
+    vertical-align: top;
+}
+
+.instagram-logo2{
+    position:absolute;
+    padding-left: 200px;
+    vertical-align: top;
+    height: 3rem;
+}
+
+.foto-perfil{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    margin: 15px;
+    width: 68%;
+    height: 68%;
+}
+
+.foto-perfil img{
+    height: 6rem;
+}
+
+
+.instagram-login{
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(000, 000, 000);  
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 5rem;
+    width: 15rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url(./resources/googleplay.com.png);
+}
+
+.app-download:nth-child(2){
+    background-image: url(./resources/kisspng-app-store-apple-iphone-grand-mercure-mysuru-5b04f9d9ad0681.4617876915270527617087.png);
+}
+
+/*media queries*/
+
+ @media (max-width: 1024px){
+     .instagram-wrapper{
+         width: 90%;
+     }
+
+     .app-download:nth-child(1){
+        position: absolute; 
+        width: 14rem;
+        top: 52rem;
+     }
+
+     .app-download:nth-child(2){
+         position: absolute;
+         width: 15rem;
+         top: 57rem;
+     }
+ }
+
+ @media (max-width: 650px){
+    body{
+        background-color: #fff;
+    } 
+    
+    .instagram-wrapper{
+         width: 90%
+     }
+     
+     .instagram-phone{
+        display: none;
+     }
+     
+     .instagram-continue-login{
+        width: 100%;
+     }
+     
+     .group{
+         border: 1px solid transparent;
+     }
+
+     .app-download:nth-child(1){
+        position: absolute; 
+        width: 14rem;
+     }
+
+     .app-download:nth-child(2){
+         position: absolute;
+         width: 15rem;
+         top: 45rem;
+     }
+ }
